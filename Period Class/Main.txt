@@ -1,0 +1,35 @@
+
+
+#include <iostream>
+#include "clsDate.h"
+#include "clsPeriod.h"
+
+using namespace std;
+
+int main()
+{
+    clsPeriod Period1(clsDate(1, 1, 2026), clsDate(10, 1, 2026));
+    Period1.Print();
+
+    clsPeriod Period2(clsDate(3, 1, 2026), clsDate(5, 1, 2026));
+    Period2.Print();
+
+    //You can check like this
+    cout << Period1.IsOverLapWith(Period2) << endl;
+
+   //Also you can call the static method and send period 1 and period 2
+        cout << clsPeriod::IsOverlapPeriods(Period1, Period2) << endl;
+
+    cout << clsPeriod::PeriodLengthInDays(Period1,true) << endl;
+    cout << Period1.PeriodLengthInDays()<< endl;
+
+    cout << Period1.isDateInPeriod(clsDate(8, 1, 2026)) << endl;
+
+    cout << Period1.CountOverlapDays(Period2)<< endl;
+
+
+
+    system("pause>0");
+    return 0;
+};
+
