@@ -10,7 +10,7 @@ This project converts previously implemented **date and time algorithms** into r
 
 The goal is to design **clean, reusable, and extensible components** that simplify working with dates and periods in C++ applications.
 
----
+----
 
 # 📑 Table of Contents
 
